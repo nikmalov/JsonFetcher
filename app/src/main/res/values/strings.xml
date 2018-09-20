@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">InterviewProject</string>
+    <string name="app_name">JsonFetcher</string>
     <string name="item_format">Item %d</string>
     <string name="section_format">Section %d</string>
     <string name="no_data">No data to display</string>

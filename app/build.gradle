@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.ignidev.nik.interviewproject"
+        applicationId "com.ignidev.nik.JsonFetcher"
         minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
