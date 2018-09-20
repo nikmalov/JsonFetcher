@@ -18,7 +18,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class NetworkUtils {
 
@@ -42,7 +41,7 @@ public class NetworkUtils {
 
     public static void fetchJsonData(String url, OnDownloadFinishedCallback callback) {
         try {
-            new JsonLoader(callback).execute(url).get(8, TimeUnit.SECONDS);
+            new JsonLoader(callback).execute(url);
         } catch (Exception e) {
             Log.i(TAG, "fetchJsonData: " + e.getClass());
             callback.onDownloadFinished("");

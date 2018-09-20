@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ProgressBar;
 
 import com.ignidev.nik.JsonFetcher.utility.NetworkUtils;
 import com.ignidev.nik.JsonFetcher.R;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class NumbersListFragment extends Fragment {
 
-    private View progressView;
+    private ProgressBar progressView;
     private View emptyView;
     private RecyclerView listView;
 
@@ -40,7 +41,6 @@ public class NumbersListFragment extends Fragment {
                 listView.setVisibility(View.GONE);
             } else {
                 listView.setAdapter(new NumbersAdapter(getContext(), data));
-                listView.requestLayout();
             }
         }
     };
