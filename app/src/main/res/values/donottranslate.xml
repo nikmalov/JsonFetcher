@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="json_test_url">https://my-json-server.typicode.com/nikmalov/demo-1/db</string>
+    <string name="json_url">https://www.navvis.com/numbers.json</string>
+</resources>
