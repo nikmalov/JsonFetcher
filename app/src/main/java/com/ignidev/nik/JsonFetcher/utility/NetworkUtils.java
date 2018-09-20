@@ -1,7 +1,6 @@
 package com.ignidev.nik.JsonFetcher.utility;
 
 import android.os.AsyncTask;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -41,11 +40,12 @@ public class NetworkUtils {
         return numbers;
     }
 
-    public static void fetchJsonData(String url, @Nullable OnDownloadFinishedCallback callback) {
+    public static void fetchJsonData(String url, OnDownloadFinishedCallback callback) {
         try {
             new JsonLoader(callback).execute(url).get(8, TimeUnit.SECONDS);
         } catch (Exception e) {
             Log.i(TAG, "fetchJsonData: " + e.getClass());
+            callback.onDownloadFinished("");
         }
     }
 
