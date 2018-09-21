@@ -5,6 +5,11 @@ import android.support.annotation.NonNull;
 
 /**
  * POJO for storing parsed data.
+ * Number represents object, parsed from simple number from range [0..255],
+ * e.g. 1111_1111b, where:
+ * 1111_11xx - define section number;
+ * 1xxx_xx11 - define actual value;
+ * x111_1111 - define presence of a check mark.
  */
 public class Number implements Comparable<Number> {
     private final int section;
